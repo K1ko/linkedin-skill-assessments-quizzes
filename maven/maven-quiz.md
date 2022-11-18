@@ -212,11 +212,11 @@ mvn install
 
 #### Q30. What does the following command do?
 
-    > mvn archetype:generate \
-    -DgroupID=sample-maven-project \
-    -DartifactID=com.palmer.bethan.sample \
-    -Dversion=1.0.0 \
-    -DinteractiveMode=false
+> mvn archetype:generate \
+> -DgroupID=sample-maven-project \
+> -DartifactID=com.palmer.bethan.sample \
+> -Dversion=1.0.0 \
+> -DinteractiveMode=false
 
 - [ ] It does nothing since no archetype has been specified
 - [ ] It generates a new Maven archetype
@@ -315,7 +315,7 @@ mvn install
 
 #### Q42. Below is a report generated for a multimodule project with the Checkstyle Plugin. Why might the highlighted links to the two child projects _not_ work?
 
-![q43](q43.png)
+![q43](q43.png?raw=png)
 
 - [ ] The Checkstyle Plugin does not work on child modules.
 - [ ] Each Checkstyle report is in the target/site folder of the respective module.
@@ -551,3 +551,18 @@ mvn install
 - [ ] A release marked with SNAPSHOT may contain sensitive security information.
 
 [!reference](https://maven.apache.org/guides/getting-started/index.html#What_is_a_SNAPSHOT_version)
+
+### Q69. Why do you use Maven Wrapper on a project shared with a large team of developers?
+- [ ] all of these answers
+- [x] All developers will be using the same Maven version, providing stability.
+- [ ] The dependencies for the project will be downloaded only once for all developers, saving bandwidth.
+- [ ] Maven Wrapper checks dependencies for vulnerabilites, increasing security.
+
+### Q70. This POM file contains an XML validation error. What is the cause of the error?
+
+![q70](q70.png?raw=png)
+
+- [ ] JUnit is not a valid dependency of a Maven project.
+- [x] the <dependency> elements should be inside <dependencies> elements.
+- [ ] The <dependency> element is not a valid in a POM file.
+- [ ] The <dependency> elements should be at the bottom of the POM file.

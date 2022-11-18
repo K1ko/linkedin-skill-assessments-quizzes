@@ -213,14 +213,14 @@ foreach(string employee in employeeQuery)
 
 #### Q18. What is the correct formatting for single line and multiline comments?
 
-- [ ] /_/ - Single Line
-      /_ - Multiline
-- [ ] // Multiline
-      /_ Single Line _/
-- [ ] //\* Multiline
-      / Single Line
-- [x] // Single Line
-      /_ Multiline _/
+- [ ] `/_/ - Single Line`
+      `/_ - Multiline`
+- [ ] `// Multiline`
+      `/_ Single Line _/`
+- [ ] `//\* Multiline`
+      `/ Single Line`
+- [x] `// Single Line`
+      `/* Multiline */`
 
 [w3schools: C# Comments](https://www.w3schools.com/cs/cs_comments.php)
 
@@ -718,12 +718,13 @@ public int Password
 
 #### Q67. How would you access the last two people in an array named People?
 
-- [x] `People[..^2]`
+- [ ] `People[..^2]`
 - [ ] `You cannot do this in C#.`
 - [ ] `People[..^3]`
 - [ ] `People[^2]`
 
-[Official Documentation: Ranges](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges)
+Explain: You **can** do this in C#. However, none of the above answers are correct. You could access the last two items by using `People[^2..]`. Please see [issue #3354](https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/issues/3354) for more information.
+See also: [Official Documentation: Ranges](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges)
 
 #### Q68. When can anonymous types be created?
 
@@ -794,9 +795,11 @@ void MyFunction()
 
 [Reference](https://stackoverflow.com/a/6136865)
 
-    #### Q74. Which statement is True?
+#### Q74. Which statement is True?
 
 - [ ] All are true.
 - [ ] None are true.
 - [ ] string is a value type.
 - [x] string is an alias for String
+
+[Reference](https://stackoverflow.com/q/7074)

@@ -70,8 +70,8 @@ v2.push_back(5);
 
 ```cpp
 union {
-    unit16_t a;
-    unit32_t b;
+    uint16_t a;
+    uint32_t b;
     int8_t c;
 } u1;
 ```
@@ -563,7 +563,7 @@ int main(){
 
 #### Q36. Which choice is _not_ a valid type definition of a structure that contains x and y coordinates as integers, and that can be used exactly as shown for the variable named `center`?
 
-```
+```cpp
 coord center;
 center.x = 5;
 center.y = 3;
@@ -989,7 +989,7 @@ A->B->C->D
 - [ ] `&A.&B.&C.&D`
 - [x] `*(*((*A).B).C).D`
 
-Note: a more complex variant of the question above.
+**Note:** a more complex variant of the question above.
 
 #### Q57. What does this function do?
 
@@ -1238,7 +1238,7 @@ int main(){
 
 #### Q74. Given these records in a map, how will you update the value for the key "Sinead" to 22?
 
-![image](images/Q79.png)
+![image](images/Q79.png?raw=png)
 
 - [x] `marks["Sinead"] = 22`
 - [ ] `marks["Sinead"].22`
@@ -1435,3 +1435,40 @@ return 0;
 - [ ] `<limit>`
 - [x] `<limits>`
 - [ ] `<implementation>`
+
+#### Q91. What is a default constructor?
+
+- [x] a constructor that can be used with no arguments
+- [ ] a contructor that does not have a return value
+- [ ] a constructor that is used by multiple classes
+- [ ] a constructor that initializes all members of a class
+
+#### Q92. When protecting a header file, why would you use '#pragma once' instead of 'include' guard?
+
+- [ ] There is no reason to choose because they serve different purposes
+- [x] An include guard uses a macro to achieve single inclusion, but the compiler cannot prevent the programmer from defining that macro elsewhere, which would result in no inclusion at all
+      defining that macro elsewhere, which would result in no inclusion at all
+- [ ] '#pragma once' guarantees that the header code will never be changed because it is enforced by the compiler
+- [ ] Include guards refer to the header file in the file system, not to the code, so they are not helpful if the header file exists
+      more than once in a project. This is not a problem with '#pragma once'
+
+#### Q93. Which of the following statement is valid?
+
+- [ ] We can create new c++ operator.
+- [ ] We can change the precedence of the c++ operator.
+- [x] We can not change the operator templates.
+- [ ] We can change the associativity of the c++ operators.
+
+#### Q94. Which of the followings is/are automatically added to every class, if we do not write our own?
+
+- [ ] Copy Constructor
+- [ ] Assignment Operator
+- [ ] A constructor without any parameter
+- [x] All of the above
+
+#### Q95. The if-else statement can be replaced by which operator ?
+
+- [ ] certain structure
+- [ ] choosing structure
+- [x] selective structure
+- [ ] None of the Above

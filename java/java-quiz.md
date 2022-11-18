@@ -212,7 +212,7 @@ class Main {
 - [ ] It will throw an exception on line 5.
 - [x] "123"
 
-**Explanation:** The answer is "123". The `abs()` method evaluates to the one inside mypackage.Math class, because The import statements of the form:
+**Explanation:** `The answer is "123". The `abs()` method evaluates to the one inside mypackage.Math class, because The import statements of the form:`
 
 `import packageName.subPackage.*`
 
@@ -276,7 +276,7 @@ class Main {
 - [ ] a negative integer value
 - [ ] "12345100000"
 
-**Reasoning:** The int type in Java can be used to represent any whole number from -2147483648 to 2147483647. Therefore, this code will not compile as the number assigned to 'a' is larger than the int type can hold.
+**Reasoning:** `The int type in Java can be used to represent any whole number from -2147483648 to 2147483647. Therefore, this code will not compile as the number assigned to 'a' is larger than the int type can hold.`
 
 #### Q14. What is the output of this code?
 
@@ -364,7 +364,7 @@ class Main {
 - [ ] 5 times
 - [ ] infinite number of times
 
-**Explanation**: Observe the loop increment. It's not an increment, it's an assignment(post).
+**Explanation**: `Observe the loop increment. It's not an increment, it's an assignment(post).`
 
 #### Q22. The runtime system starts your program by calling which function first?
 
@@ -390,7 +390,9 @@ public class Jedi {
 - [x] this(name, species, false)
 - [ ] super(name, species, false)
 
-  **Note:** This code won't compile, possibly broken code sample.
+**Note:** `This code won't compile, possibly broken code sample.`
+
+- [Reference](https://www.scaler.com/topics/java/constructor-in-java/)
 
 #### Q24. Which statement is **NOT** true?
 
@@ -535,7 +537,7 @@ public static void badMethod() {
 - [ ] C and D
 - [x] A and D
 
-**Explanation**: `Error` is not inherited from `Exception`
+**Explanation**: `` Error` is not inherited from `Exception ``
 
 #### Q34. What is the output of this code?
 
@@ -1326,7 +1328,7 @@ public class Main {
 
 **Explanation**: HashMap class implements Map interface.
 
-#### Q95. You have a variable of named `employees` of type `List<Employee>` containing multiple entries. The `Employee` type has a method `getName()` that returns te employee name. Which statement properly extracts a list of employee names?
+#### Q95. You have a variable of named `employees` of type `List<Employee>` containing multiple entries. The `Employee` type has a method `getName()` that returns the employee name. Which statement properly extracts a list of employee names?
 
 - [ ] `employees.collect(employee -> employee.getName());`
 - [ ] `employees.filter(Employee::getName).collect(Collectors.toUnmodifiableList());`
@@ -1335,7 +1337,7 @@ public class Main {
 
 #### Q96. This code does not compile. What needs to be changed so that it does?
 
-```
+```java
 public enum Direction {
     EAST("E"),
     WEST("W"),
@@ -1429,8 +1431,8 @@ public class Berries{
 
     String berry = "blue";
 
-    public static void main( String[] args ) {
-        new Berries().juicy( "straw" );
+    public static void main(String[] args) {
+        new Berries().juicy("straw");
     }
     void juicy(String berry){
         this.berry = "rasp";
@@ -1472,11 +1474,11 @@ import java.util.List;
 
 class Main {
 
-    public static void main( String[] args ) {
-        List<String> list = new ArrayList<String>( Arrays.asList( "a", "b", "c" ) );
-        for( String value :list ){
-            if( value.equals( "a" ) ) {
-                list.remove( value );
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<String>(Arrays.asList("a", "b", "c"));
+        for(String value :list) {
+            if(value.equals("a")) {
+                list.remove(value);
             }
         }
         System.out.println(list); // outputs [b,c]
@@ -1492,7 +1494,7 @@ class Main {
 #### Q106. How do you convert this method into a lambda expression?
 
 ```java
-public int square(int x){
+public int square(int x) {
     return x * x;
 }
 ```
@@ -1557,13 +1559,13 @@ public class MyClass implements MyInterface {
 #### Q108. What is the result of this program?
 
 ```java
-interface Foo{
+interface Foo {
     int x = 10;
 }
 
 public class Main{
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
         Foo.x = 20;
         System.out.println(Foo.x);
     }
@@ -1577,7 +1579,7 @@ public class Main{
 
 #### Q109. Which statement must be inserted on line 1 to print the value true?
 
-```
+```java
 1:
 2: Optional<String> opt = Optional.of(val);
 3: System.out.println(opt.isPresent());
@@ -1604,14 +1606,14 @@ System.out.println(false || false && true);
 
 ```java
 List<String> list1 = new ArrayList<>();
-list1.add( "One" );
-list1.add( "Two" );
-list1.add( "Three" );
+list1.add("One");
+list1.add("Two");
+list1.add("Three");
 
 List<String> list2 = new ArrayList<>();
-list2.add( "Two" );
+list2.add("Two");
 
-list1.remove( list2 );
+list1.remove(list2);
 System.out.println(list1);
 ```
 
@@ -1868,7 +1870,7 @@ int total = numbers.stream()
 
 **Explanation:** The given code in the question will give you the output 20 as total
 
-```
+```java
 numbers                         // Input `List<Integer>` > [1, 2, 3, 4] <br>
     .stream()                   // Converts input into `Stream<Integer>` <br>
     .filter(x -> x % 2 == 0)    // Filter even numbers and return `Stream<Integer>` > [2, 4] <br>
@@ -2061,10 +2063,10 @@ Queue<Rainfall>
 
 #### Q143. When you pass an object reference as an argument to a method call what gets passed?
 
-- [ ]a reference to a copy
-- [ ]a copy of the reference
-- [ ]the object itself
-- [x]the original reference
+- [ ] a reference to a copy
+- [ ] a copy of the reference
+- [ ] the object itself
+- [x] the original reference
 
 #### Q144. Which choice demonstrates a valid way to create a reference to a static function of another class?
 
@@ -2211,4 +2213,99 @@ class Lambo extends Car {
 - [ ] jar FrogSounds.java
 - [ ] javac FrogSounds.exe
 - [ ] jar cf FrogSounds.jar
-- [x] java -jar FrogSounds.jar 
+- [x] java -jar FrogSounds.jar
+
+#### Q157. What is the default value of short variable?
+
+- [x] 0
+- [ ] 0.0
+- [ ] null
+- [ ] undefined
+
+#### Q158. What will be the output of the following Java program?
+
+```java
+class variable_scope {
+	public static void main(String args[])
+        {
+            int x;
+            x = 5;
+            {
+	        int y = 6;
+	        System.out.print(x + " " + y);
+            }
+            System.out.println(x + " " + y);
+        }
+}
+```
+
+- [x] Compilation Error
+- [ ] Runtime Error
+- [ ] 5 6 5 6
+- [ ] 5 6 5
+
+#### Q159. Subclasses of an abstract class are created using the keyword **\_**.
+
+- [x] extends
+- [ ] abstracts
+- [ ] interfaces
+- [ ] implements
+
+[Reference See An Abstract Class Example ](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+
+#### Q160. What language feature do these expressions demonstrate?
+
+```
+System.out::println
+Doggie::fetch
+```
+
+- [x] method references
+- [ ] bad code
+- [ ] condensed invocation
+- [ ] static references
+
+[Reference](https://stackoverflow.com/questions/31020269/what-is-the-use-of-system-outprintln-in-java-8)
+
+#### Q161. What will be the output of the following program?
+
+```java
+import java.util.Formatter;
+public class Course {
+    public static void main(String[] args) {
+        Formatter data = new Formatter();
+        data.format("course %s", "java ");
+        System.out.println(data);
+        data.format("tutorial %s", "Merit campus");
+        System.out.println(data);
+    }
+}
+```
+
+- [ ] course java
+      tutorial Merit campus
+- [x] course java
+      course java tutorial Merit campus
+- [ ] Compilation Error
+- [ ] Runtime Error
+
+#### Q162. Calculate the time complexity of the following program.
+
+```java
+ void printUnorderedPairs(int[] arrayA, int[] arrayB){
+    for(int i = 0; i < arrayA.length; i++){
+        for(int  j = 0; j < arrayB.length; j++){
+            if(arrayA[i] < arrayB[j]){
+                System.out.println(arrayA[i] + "," + arrayB[j]);
+            }
+        }
+    }
+ }
+```
+
+- [ ] O(N\*N)
+- [ ] O(1)
+- [x] O(AB)
+- [ ] O(A\*B)
+
+[Reference](<http://englishonlineclub.com/pdf/Cracking%20the%20Coding%20Interview%20-%20189%20Programming%20Questions%20and%20Solutions%20(6th%20Edition)%20[EnglishOnlineClub.com].pdf>) //check page number 47 and example number 4.:-}

@@ -2,10 +2,10 @@
 
 #### Q1. A dataset that includes \_ can be used to create a map visualization. (Select all that apply.)
 
-    A. house numbers, street names
-    B. geospatial data
-    C. city names, country names
-    D. longitude, latitude
+A. house numbers, street names
+B. geospatial data
+C. city names, country names
+D. longitude, latitude
 
 - [x] A, B, C, D
 - [ ] A, C, D
@@ -74,6 +74,8 @@
 - [ ] written to an OLAP cube
 - [ ] assigned a data type
 - [ ] sorted by primary key
+
+[Reference](https://www.scaler.com/topics/sql-server/)
 
 #### Q10. Power BI's Publish to Web option allows you to embed visualizations within **\_**. (Select all that apply.)
 
@@ -722,3 +724,38 @@
 - [ ] model view
 - [x] query view
 - [ ] data view
+
+#### Q91. Which value for the type parameter in the DAX function PATHITEM indicates integer?
+
+- [ ] 0
+- [ ] "Integer"
+- [ ] TRUE
+- [x] 1
+
+#### Q92. Which type of chart in Power BI is beneficial for helping you visualize data over time?
+
+- [ ] pie charts
+- [ ] stacked column charts
+- [ ] tree maps
+- [x] line charts
+
+#### Q93. To combine multiple tables into a single table in Power BI, use the **\_** tool in the query editor.
+
+- [x] Append
+- [ ] Combine
+- [ ] Query
+- [ ] Report
+
+#### Q94. Which time intelligence function in DAX can be used for seeing month-on-month data?
+
+- [x] ParallelPeriod
+- [ ] TotalYTD
+- [ ] SamePeriodLastYear
+- [ ] MonthOnMonth
+
+#### Q95. Which part of Microsoft's data gateway's configuration allows you to switch between TCP and HTTPS modes?
+
+- [ ] Diagnostics
+- [ ] Service settings
+- [ ] Connectors
+- [x] Network

@@ -840,3 +840,54 @@ if [[ $FILE == $GLOB ]] ;then
 - [ ] $1
 - [x] $0
 - [ ] $9
+
+#### Q102. VirtualBox provides **\_**, which are installed on guests and allow the guest operating system to access shared folders on the host system, share the clipboard, and some other similar actions.
+
+- [ ] projects
+- [ ] guest configurations
+- [ ] SSHs
+- [x] guest additions
+
+#### Q103. Given an IP address of 199.83.131.0 and a subnet mask of 255.255.255.0, what is the broadcast address?
+
+- [ ] 199.83.131.1
+- [ ] 10 Downing Street
+- [ ] 199.83.131.0
+- [x] 199.83.131.255
+
+#### Q104. Which Linux command shows a list of processes associated with the current user and the current terminal?
+
+- [x] ps
+- [ ] ls
+- [ ] pidof
+- [ ] ps -e
+
+#### Q105. In a shell script, to create an infinite while loop, make the condition always return true by using the **\_** command for the while loop condition.
+
+- [ ] return
+- [ ] continue
+- [x] true
+- [ ] always
+
+#### Q106. In Linux, which option is used with the uname command to print the processor architecture name?
+
+- [x] -p
+- [ ] -arch
+- [ ] -ps
+- [ ] -pname
+
+#### Q107. Which of these do NOT constitute as a default part of the email system of Red Hat Linux?
+
+- [ ] The MTA
+- [x] Pine
+- [ ] Procmail
+- [ ] The MUA
+
+#### Q108. In BASH parsing, which expansion happens first?
+
+- [x] brace expansion
+- [ ] variable expansion
+- [ ] filename expansion (globbing)
+- [ ] word splitting
+
+[Reference](https://stackoverflow.com/questions/54160869/in-what-order-does-bash-parser-escape-characters-and-split-words-tokens-within-c#:~:text=Expansions%20are%20performed%2C%20in%20order,Tilde%20expansion%2C%20e.g.%20~root%20.)

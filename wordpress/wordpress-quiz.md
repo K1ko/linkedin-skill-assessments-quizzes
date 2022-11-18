@@ -65,22 +65,22 @@
 
 #### Q10. What color is the paragraph nested within the div?
 
-```<html>
+```html
 <head>
-        <style>
-                body { color: black; }
+    <style>
+        body { color: black; }
 
-                p { color: blue; }
+        p { color: blue; }
 
-                div { color: green; }
+        div { color: green; }
 
-                p { color: red; }
-        </style>
+        p { color: red; }
+    </style>
 </head>
 <body>
-        <div>
-                <p>This is a paragraph inside a div.</p>
-        </div>
+    <div>
+        <p>This is a paragraph inside a div.</p>
+    </div>
 </body>
 </html>
 ```
@@ -173,33 +173,33 @@ izer API to give users a way to manipulate basic theme settings. The Customizer 
 
 - [ ] .
 
-```
-$.ready(function() {
-// do stuff
+```js
+$.ready(function () {
+  // do stuff
 });
 ```
 
 - [ ] .
 
-```
-(function($) {
-// do stuff
-})( jQuery );
+```js
+(function ($) {
+  // do stuff
+})(jQuery);
 ```
 
 - [x] .
 
-```
-$(function() {
-// do stuff
+```js
+$(function () {
+  // do stuff
 });
 ```
 
 - [ ] .
 
-```
-jQuery(function($) {
-// do stuff
+```js
+jQuery(function ($) {
+  // do stuff
 });
 ```
 
@@ -293,7 +293,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 - [x] register_post_type
 - [ ] add_meta_box
 - [ ] wp_head
-- [] init
+- [ ] init
 
 #### Q35. What is the role of a WordPress theme?
 
@@ -630,7 +630,9 @@ endif;
 
 #### Q72. JavaScript variables can hold many data types. Which data type does the following variable represent?
 
-`var x = "16"`
+```js
+var x = '16';
+```
 
 - [ ] Boolean
 - [ ] Number

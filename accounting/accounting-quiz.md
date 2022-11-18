@@ -185,7 +185,8 @@
 - [ ] The balanced scorecard measures, tracks, and reports on a balance of qualitative and financial data and metrics. (def true)
 - [x] The balanced scorecard ensures the organization's profitability aligns with director compensation and dividend expectations.
 
-[Reference](http://www.managerialaccounting.org/Balanced%20Scorecard.htm)`'MT: BSC is on improving efficiency - deliver goals and how to measure that quantitatively or qualitatively. Nothing to do with how to compensate'`
+[Reference](http://www.managerialaccounting.org/Balanced%20Scorecard.htm)
+`'MT: BSC is on improving efficiency - deliver goals and how to measure that quantitatively or qualitatively. Nothing to do with how to compensate'`
 
 #### Q25. Which choice is not a component of internal control?
 
@@ -480,7 +481,7 @@ I'm not 100% sure on this.
 - [ ] the metric system
 - [ ] TREE
 - [ ] GAAP
-- [ ] IFRS
+- [x] IFRS
 
 #### Q58. What type of audit evidence would be considered the weakest type?
 
@@ -564,7 +565,7 @@ I'm not 100% sure on this.
 - [ ] when the company must decide to purchase assets and what investment is required
 - [ ] how much of a company's assets are financed by creditors
 - [ ] how often a company must replace existing assets and equipment
-- [ ] how efficiently a company uses its assets to generate revenue
+- [x] how efficiently a company uses its assets to generate revenue
 
 #### Q70. What cost is easily traceable to a cost object?
 

@@ -1624,7 +1624,7 @@ num_list[len(num_list) // 2]
 
 [Reference](https://pandas.pydata.org/docs/user_guide/dsintro.html)
 
-#### Q119. Suppose you have a variale named `vector` of type np.array with 10,000 elements. How can you turn `vector` into a variable named `matrix` with dimensions 100x100?
+#### Q119. Suppose you have a variable named `vector` of type np.array with 10,000 elements. How can you turn `vector` into a variable named `matrix` with dimensions 100x100?
 
 - [ ] `matrix = (vector.shape = (100,100))`
 - [ ] `matrix = vector.to_matrix(100,100)`
@@ -1696,7 +1696,7 @@ Hello, I am from France
 
 #### Q123. Using Pandas, we load a data set from Kaggle, as structured in the image below. Which command will return the total number of survivors?
 
-![Q129](images/Q129.png)
+![Q129](images/Q129.png?raw=png)
 
 - [x] `sum(titanic['Survived'])`
 - [ ] `[x for x in titanic['Survived'] if x == 1]`
@@ -1741,7 +1741,7 @@ for x in range(1, len(characters)):
 
 #### Q126. Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?
 
-![Q132](images/Q132.png)
+![Q132](images/Q132.png?raw=png)
 
 - [ ] `def jaccard(a, b): return len (a | b) / len (a & b)`
 - [x] `def jaccard(a, b): return len (a & b) / len (a | b)`
@@ -1833,6 +1833,8 @@ print ("foo" if (256).bit_length() > 8 else "bar")
 - [ ] numerical; tabular
 - [ ] tabular; numerical
 
+[Reference](https://www.interviewbit.com/blog/pandas-vs-numpy/)
+
 #### Q137. What do you need to do to install additional packages into Python?
 
 - [ ] Use a C compiler like gcc or clang.
@@ -1842,7 +1844,7 @@ print ("foo" if (256).bit_length() > 8 else "bar")
 
 #### Q138. The image below was created using Matplotlib. It is a distribution plot of a list of integers filled with numbers using the function **\_** and plotted with **\_**.
 
-![Q132](images/Q138.png)
+![Q132](images/Q138.png?raw=png)
 
 - [ ] `random.uniform(0,50);plt.hist`
 - [x] `random.gauss(50,20);plt.hist`
@@ -2159,7 +2161,7 @@ Else y = 1 + 30
 - [ ] conversion of a byte stream into Python object hierarchy
 - [ ] conversion of a list into a datatable
 
-Explanation:Pickling is the process of sterilizing a Python object, that is, conversion of a byte stream into Python object hierarchy. The reverse of this process is known as unpickling.
+**Explanation:** Pickling is the process of sterilizing a Python object, that is, conversion of a byte stream into Python object hierarchy. The reverse of this process is known as unpickling.
 
 #### Q158. What is the output of the following program ?
 
@@ -2212,12 +2214,12 @@ print(x**2 == -1)
 - [ ] 1j
 - [ ] False
 
-Explanation: The letter `j` acts as the imaginary unit in Python, therefore `x**2` means `j**2` which is equal to `-1`. The statement `x**2 == -1` is evaluated as `True`.
+**Explanation:** The letter `j` acts as the imaginary unit in Python, therefore `x**2` means `j**2` which is equal to `-1`. The statement `x**2 == -1` is evaluated as `True`.
 
 #### Q164. What will be printed in the console if you run this code?
 
 ```python
-print(0xA + 0xB + 0xC) 
+print(0xA + 0xB + 0xC)
 ```
 
 - [x] 33
@@ -2225,7 +2227,7 @@ print(0xA + 0xB + 0xC)
 - [ ] 0xA + 0xB + 0xC
 - [ ] None
 
-Explanation: A, B and C are hexadecimal integers with values 10, 11 and 12 respectively, so the sum
+**Explanation:** A, B and C are hexadecimal integers with values 10, 11 and 12 respectively, so the sum
 of A, B and C is 33.
 
 #### Q165. What will this code output to the screen?
@@ -2241,3 +2243,140 @@ else:
 - [ ] 0 1 2 3 4 5 Done!
 - [x] 0 1 2 3 4 Done!
 - [ ] You will get a syntax error.
+
+#### Q166. Which comparison of lists and tuples in Python is correct?
+
+- [ ] Use lists instead of tuples when you have a collection of related but dissimilar objects.
+- [ ] Use tuples instead of lists when you have a common collection of similar objects.
+- [x] Use tuples instead of lists for functions that need to return multiple values.
+- [ ] Use lists instead of tuples when the position of elements is important.
+
+#### Q167. Consider the following code snippet that uses decorators to calculate the execution time of execution_fn function:
+
+```python
+import functools
+import time
+
+def timer(MISSING_ARG_1):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        start_time = time.perf_counter()
+        rval = func(*args, **kwargs)
+        end_time = time.perf_counter()
+        duration = end_time - start_time
+        print(f"Executed in {duration:.4f} seconds")
+        return MISSING_ARG_2
+    return MISSING_ARG_3
+
+@timer
+def execution_fn():
+    for i in range(3):
+        time.sleep(1)
+
+execution_fn()
+```
+
+**Which of the following choices are the missing arguments?**
+
+- [ ] :
+
+```
+MISSING_ARG_1 = wrapper
+
+MISSING_ARG_2 = rval
+
+MISSING_ARG_3 = func
+```
+
+- [x] :
+
+```
+MISSING_ARG_1 = func
+
+MISSING_ARG_2 = rval
+
+MISSING_ARG_3 = wrapper
+```
+
+- [ ] :
+
+```
+MISSING_ARG_1 is empty
+
+MISSING_ARG_2 = rval
+
+MISSING_ARG_3 = wrapper
+```
+
+- [ ] :
+
+```
+MISSING_ARG_1 is empty
+
+MISSING_ARG_2 = rval
+
+MISSING_ARG_3 = func
+```
+
+#### Q168. Which of the following statements defines a new object type named "Dog" in Python?
+
+- [x] class Dog:
+- [ ] Dog class:
+- [ ] Dog:
+- [ ] class Dog
+
+#### Q169. To use pipelines in scikit-learn, import from the scikit-learn.**\_** submodule.
+
+- [ ] preprocessing
+- [x] pipeline
+- [ ] filters
+- [ ] pipe_filter
+
+#### Q170. You should pass in a value of **\_** for the axis argument to the Pandas apply method to apply the function to each row.
+
+- [ ] row
+- [ ] col
+- [x] 1
+- [ ] 0
+
+#### Q171. Data points in pyplot are called
+
+- [ ] pointers
+- [ ] points
+- [x] markers
+- [ ] none of these
+
+#### Q172. What does this code print?
+
+```python
+a = np.array([[1, 2], [3, 4], [5, 6]])
+c = a[(a > 3) & (a < 11)]
+print(c)
+```
+
+- [ ] `[[3, 4], [5, 6]]`
+- [ ] `[False, False, False, True, True, True]`
+- [ ] `[[0,0], [3, 4], [5, 6]]`
+- [x] `[4 5 6]`
+
+#### Q173. What is the correct syntax for replacing the string `apple` in the list with the string `orange`?
+
+```python
+my_list = [2, 'apple', 3.5]
+```
+
+- [ ] `orange = my_list[1]`
+- [x] `my_list[1] = 'orange'`
+- [ ] `my_list['orange'] = 1`
+- [ ] `my_list[1] == orange`
+
+#### Q174. Assume m, n and p are positive integers. In the following comprehension, how many times will the function `randint` be called?
+
+```python
+[ [ [ randint(1,100) for i in range(m) ] for j in range(n) ] for k in range(p) ]
+```
+
+- [x] m _ n _ p
+- [ ] the greater value of (m,n,p)
+- [ ] 1 million
+- [ ] m + n + p

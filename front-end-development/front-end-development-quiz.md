@@ -13,8 +13,7 @@
 ```
 
 - [ ] ![A](images/Q1-A.jpg)
-- [x]
-  ![B](images/Q1-B.jpg)
+- [x] ![B](images/Q1-B.jpg)
 - [ ] ![C](images/Q1-C.jpg)
 - [ ] ![D](images/Q1-D.jpg)
 
@@ -291,10 +290,12 @@ cite {
 
 #### Q30. What will this loop print?
 
-          let max = 3;
-          for (i = 0; i > max; i++) {
-            document.write("skrt ");
-          }
+```
+let max = 3;
+for (i = 0; i > max; i++) {
+  document.write("skrt ");
+}
+```
 
 - [ ] skrt skrt skrt
 - [ ] skrt skrt
@@ -346,8 +347,8 @@ const user = {
 
 #### Q36. A webpage has `rel="preconnect"` added to a link resource. What will this do?
 
-```
-<link rel="preconnect" href="https://example.com">
+```html
+<link rel="preconnect" href="https://example.com" />
 ```
 
 - [ ] It will tell the browser that this link is a site belonging to the current domain.
@@ -596,7 +597,7 @@ console.log(currencies);
 ```css
 .box {
   background-color: blue;
-  background: url(images/star.png) no-repeat left top;
+  background: url(images/star.png?raw=png) no-repeat left top;
 }
 ```
 
@@ -614,49 +615,48 @@ console.log(currencies);
 
 #### Q64. Which code example would center `.box` inside `.container`?
 
-```hmtl
+```html
 <div class="container">
-    <div class="box">what a lovely box, very centered
-    </div>
+  <div class="box">what a lovely box, very centered</div>
 </div>
 ```
 
 - [ ] A
 
-  ```css
-  .container {
-    display: flex;
-    align-items: center;
-  }
-  ```
+```css
+.container {
+  display: flex;
+  align-items: center;
+}
+```
 
 - [x] B
 
-  ```css
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  ```
+```css
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
 
 - [ ] C
 
-  ```css
-  .box {
-    align-items: center;
-    justify-content: center;
-  }
-  ```
+```css
+.box {
+  align-items: center;
+  justify-content: center;
+}
+```
 
 - [ ] D
 
-  ```css
-  .container {
-    display: flex;
-    align: center;
-  }
-  ```
+```css
+.container {
+  display: flex;
+  align: center;
+}
+```
 
 #### Q65. CSS Logical Properties and Values now have wide-ranging support in browsers. If you wanted to use the logical version of `width`, which property name would you choose?
 
@@ -782,10 +782,10 @@ box {
 
 #### Q79. In supporting browsers, what would be the effect of using font-display: swap, as in example?
 
-```
+```css
 @font-face {
-    font-family: Helvetica;
-    font-display: swap;
+  font-family: Helvetica;
+  font-display: swap;
 }
 ```
 

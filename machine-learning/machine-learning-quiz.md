@@ -365,7 +365,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 [Reference](https://towardsdatascience.com/all-about-naive-bayes-8e13cef044cf)
 
-#### Q49. Someone of your data science team recommends that you use decision trees, naive Bayes and K-nearest neighbor, all at the same time, on the same training data, and then average the results. What is this an example of?
+#### Q49. Someone on your data science team recommends that you use decision trees, naive Bayes and K-nearest neighbor, all at the same time, on the same training data, and then average the results. What is this an example of?
 
 - [ ] regression analysis
 - [ ] unsupervised learning
@@ -467,7 +467,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [x] There is not a lot of variance but there is a high bias.
 - [ ] Your model has low bias but high variance.
 
-  `Underfitted data models usually have high bias and low variance. Overfitted data models have low bias and high variance.`
+`Underfitted data models usually have high bias and low variance. Overfitted data models have low bias and high variance.`
 
 #### Q63. Asian user complains that your company's facial recognition model does not properly identify their facial expressions. What should you do?
 
@@ -502,7 +502,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] 12%
 - [ ] 0.0008%
 
-![image](images/machine-learning_Q62.png)
+![image](images/machine-learning_Q62.png?raw=png)
 
 #### Q67. The new dataset you have just scraped seems to exhibit lots of missing values. What action will help you minimizing that problem?
 
@@ -534,7 +534,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 #### Q71. What is the correct option?
 
-![image](images/machine-learning_Q67.png)
+![image](images/machine-learning_Q67.png?raw=png)
 
 | no.    | Red              | Blue             | Green            |
 | ------ | ---------------- | ---------------- | ---------------- |
@@ -566,7 +566,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 #### Q74. The fit line and data in the figure exhibits which pattern?
 
-![image](images/machine-learning_Q70.png)
+![image](images/machine-learning_Q70.png?raw=png)
 
 - [ ] low bias, high variance
 - [ ] high bias, low variance
@@ -825,3 +825,31 @@ Which of these statements do you agree with?
 - [x] Item
 - [ ] Similarity
 - [ ] Purchase
+
+### Q107. Fill in the blanks: Two multivariate imputer techniques are the **\_** imputer and the **\_** imputer.
+
+- [ ] supervised, unsupervised
+- [x] iterative, KNN
+- [ ] similarity, regressive
+- [ ] normalized, scaled
+
+### Q108. You are working on a regression model using the Keras library. What method on the Model class do you use to train the model?
+
+- [ ] predict
+- [ ] compile
+- [x] fit
+- [ ] get_weights
+
+### Q109. What is the goal of regularization in the K nearest neighbors algorithm?
+
+- [ ] normalizing the data points so they can be compared with each other
+- [ ] using a straight line model to make predictions based on training data
+- [ ] finding the slope of the line that represents the model
+- [x] making the decision boundaries more regular
+
+### Q110. If there is no trend between two variables x and y, we say that there is a **\_** connection between x and y.
+
+- [ ] linear
+- [ ] exponential
+- [ ] non-random
+- [x] random

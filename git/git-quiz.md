@@ -190,28 +190,34 @@ modified: beta-notes.js
 #### Q20. What commands would you use to force an overwrite of your local files with the master branch?
 
 - [ ] ⠀
-  ```bash
+
+```bash
   git pull --all
   git reset --hard origin/master
-  ```
+```
+
 - [ ] ⠀
-  ```bash
+
+```bash
   git pull -u origin master
   git reset --hard master
-  ```
-- [ ] ⠀
-  ```bash
+```
+
+- [ ]
+
+```bash
   git pull origin master
   git reset --hard origin/myCurrentBranch
-  ```
-- [x] ⠀
+```
 
-  ```bash
+- [x]
+
+```bash
   git fetch --all
   git reset --hard origin/master
-  ```
+```
 
-- The command `pull` is `fetch` followed by either `merge` or `rebase` (in this case, `merge`). We don't want to merge. Merge would be an action to our **repository**. We just want to overwrite our **local files**.
+**Note**: - The command `pull` is `fetch` followed by either `merge` or `rebase` (in this case, `merge`). We don't want to merge. Merge would be an action to our **repository**. We just want to overwrite our **local files**.
 
 #### Q21. Which statement is true when you use the git add -A command?
 
@@ -662,7 +668,7 @@ git checkout -b beta-test
 
 #### Q80. Consider the following Git workflow:
 
-![image](images/Git-WorkFlow.png)
+![image](images/Git-WorkFlow.png?raw=png)
 Which of the following options is correct ?
 
 - [ ] `1. Develop 2. Release 3. Hotfix 4. Feature 5. Master`
@@ -1032,24 +1038,30 @@ Untracked files:
 #### Q127. After making a commit, you notice that you forgot to include changes to the doge.txt file. What command or commands would you use to add the changes to the commit ?
 
 - [x] ⠀
-  ```bash
+
+```bash
   git add doge.txt
   git commit --amend --no-edit
-  ```
-- [ ] ⠀
-  ```bash
-  git commit --amend --no-edit
-  ```
-- [ ] ⠀
-  ```bash
-  git add doge.txt
-  git commit --patch --no-edit
-  ```
+```
+
 - [ ] ⠀
 
-  ```bash
+```bash
+  git commit --amend --no-edit
+```
+
+- [ ] ⠀
+
+```bash
+  git add doge.txt
   git commit --patch --no-edit
-  ```
+```
+
+- [ ] ⠀
+
+```bash
+  git commit --patch --no-edit
+```
 
 #### Q128. Which command would remove a file named wrongfile from the current branch of a repository, the index, and working files?
 
@@ -1061,21 +1073,25 @@ git commit -m "Removed file"
 ```
 
 - [ ] ⠀
-  ```bash
+
+```bash
   git forget -rf wrongfile
   git commit -m "Removed file"
-  ```
+```
+
 - [ ] ⠀
-  ```bash
+
+```bash
   git untrack -rf wrongfile
   git commit -m "Removed file"
-  ```
+```
+
 - [x] ⠀
 
-  ```bash
+```bash
   git rm --cached wrongfile
   git commit -m "Removed file"
-  ```
+```
 
 #### Q129. What is the best way to report a bug to a GitHub project?
 
